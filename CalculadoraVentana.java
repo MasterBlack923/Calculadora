@@ -508,8 +508,6 @@ public class CalculadoraVentana extends JFrame {
                         acumulat = String.valueOf(resultat);
                     }
                 }
-
-
                 resultatfinal = Double.toString(resultat);
                 cajaTexto.setText(resultatfinal);
                 acumulat = Double.toString(resultat);

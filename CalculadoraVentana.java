@@ -41,7 +41,7 @@ public class CalculadoraVentana extends JFrame {
         //setLocation(100,200);
         //setBounds(100,200,500,500);
         setLocationRelativeTo(null); //Fer apareixer la finestra al centre
-        this.getContentPane().setBackground(Color.DARK_GRAY);
+        this.getContentPane().setBackground(Color.lightGray);
         iniciarComponentes();
     }
 
@@ -58,7 +58,7 @@ public class CalculadoraVentana extends JFrame {
     private void colocarPaneles() {
         panel = new JPanel(); //Creació d'un panell
         panel.setBounds(2,5,50,50);
-        panel.setBackground(Color.GRAY);
+        panel.setBackground(Color.gray);
         panel.setLayout(null);
         this.getContentPane().add(panel); //Afegim el panell a la finestra
 
@@ -519,12 +519,12 @@ public class CalculadoraVentana extends JFrame {
 
 
     private void colocarCajasDeTexto() {
-        cajaTexto.setBounds(0, 0, 205, 80);
+        cajaTexto.setBounds(-3, 0, 212, 80);
         cajaTexto.setText("0");
         cajaTexto.setFont(new Font("San Francisco", 0, 40));
         cajaTexto.setEditable(true);
         cajaTexto.setHorizontalAlignment(SwingConstants.RIGHT);
-        cajaTexto.setBackground(Color.darkGray);
+        cajaTexto.setBackground(Color.gray);
 
         panel.add(cajaTexto);
 

@@ -166,7 +166,6 @@ public class CalculadoraVentana extends JFrame {
         ActionListener div = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 nombre1 = Double.parseDouble(cajaTexto.getText());
                 cajaTexto.setText(null);
                 operacio = "/";
@@ -513,8 +512,7 @@ public class CalculadoraVentana extends JFrame {
 
                 resultatfinal = Double.toString(resultat);
                 cajaTexto.setText(resultatfinal);
-                acumulat = resultatfinal;
-
+                acumulat = Double.toString(resultat);
             }
         };
         boton19.addActionListener(igual);
